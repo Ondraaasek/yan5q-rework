@@ -37,49 +37,45 @@ button {
     backdrop-filter: blur(25px);
     display: flex;
     align-items: center;
-    padding: 10px 1rem;
+    padding: 0 10%;
     z-index: 1000;
     justify-content: flex-start;
     font-family: 'YourNavbarFont', sans-serif;
-    padding-top: 2rem;
+    height: 80px;
     transition: all 0.3s ease;
-    padding-left: 20rem;
-    padding-right: 20rem;
-    height: 10vh;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar.scrolled {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding: 0 10%;
 }
 
 .logo {
     width: 30px;
     height: auto;
     margin-right: 10px;
-    margin-left: 21.5rem;
+    margin-left: 10%;
     border: 1px #fff solid;
     transition: all 0.3s ease;
     border-radius: 50%;
 }
 
 .navbar.scrolled .logo {
-    margin-left: 11.5rem;
+    margin-left: 10%;
 }
 
 .nav-buttons {
-    display: flex; /* Align buttons in a row */
-    gap: 10px; /* Space between buttons */
-    margin-left: 20px; /* Add margin to separate from logo */
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
     background: transparent;
     color: rgba(230, 230, 230, 1);
     transition: 0.3s, color 0.3s;
-    border: none; /* Ensure no border is applied */
-    outline: none; /* Remove any outline that may appear */
-    box-shadow: none; /* Remove any box shadow that may create a border effect */
+    border: none;
+    outline: none;
+    box-shadow: none;
     font-size: xx-large;
-    margin-right: auto; /* Push buttons to the left */
+    margin-right: auto;
     font-family: 'Inter', sans-serif;
 }
 
@@ -87,17 +83,17 @@ button {
     background: transparent; /* Transparent button background */
     color: white; /* White text color */
     border: 0px #000 0;
-    padding: 10px 20px; /* Padding for buttons */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: 0.3s, color 0.3s; /* Transition for hover effects */
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: 0.3s, color 0.3s;
     outline: none;
     border: none;
-    font-size: medium; /* Font size for button */
+    font-size: 1.1rem;
     font-family: 'Inter', sans-serif;
-    position: relative; /* Add position relative for the pseudo-element */
-    display: flex; /* Use flexbox for icon and text alignment */
-    align-items: center; /* Center items vertically */
-    gap: 6px; /* Space between icon and text */
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .nav-button:hover {
@@ -133,16 +129,16 @@ button {
     background: transparent;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 6px;
-    padding: 8px 16px;
+    border-radius: 8px;
+    padding: 10px 20px;
     cursor: pointer;
     transition: all 0.2s ease;
-    font-size: medium;
+    font-size: 1.1rem;
     font-family: 'Inter', sans-serif;
-    margin-right: 21.5rem;
+    margin-right: 10%;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
 }
 
 .contact-button:hover {
@@ -154,7 +150,7 @@ button {
 }
 
 .navbar.scrolled .contact-button {
-    margin-right: 11.5rem;
+    margin-right: 10%;
 }
 
 .page {
@@ -194,15 +190,15 @@ button {
 
 .footer-content {
     text-align: left;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 1rem;
     font-family: 'Inter', sans-serif;
 }
 
 footer hr {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     border: none;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -211,7 +207,7 @@ footer hr {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
 }
 .name {
@@ -254,9 +250,9 @@ h1 {
     gap: 0.5rem;
     align-items: center;
     margin-top: 1.5rem;
-    margin-bottom: 4rem;  /* Added margin-bottom to create space before footer */
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-bottom: 4rem;
+    padding-left: 10%;
+    padding-right: 10%;
     animation: fadeInUp 0.6s ease-out forwards;
     animation-delay: 0.8s;
     will-change: transform, opacity;
@@ -265,19 +261,19 @@ h1 {
 }
 
 .language-button {
-    background-color: #262626; /* Background color for buttons */
-    color: #e2e8f0; /* Text color */
-    padding: 0.25rem 1rem; /* Adjusted padding for buttons */
-    border-radius: 0.375rem; /* Rounded corners */
-    font-size: 1rem; /* Font size */
-    display: flex; /* Flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    gap: 0.5rem; /* Space between logo and text */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
-    min-width: 170px; /* Minimum width for buttons */
-    height: 50px; /* Fixed height for buttons */
-    border: 1px solid rgba(255, 255, 255, 0.15); /* Border for buttons */
-    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #262626;
+    color: #e2e8f0;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    min-width: 190px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
@@ -291,20 +287,20 @@ h1 {
 }
 
 .language-logo {
-    width: 24px; /* Adjust logo size */
-    height: auto; /* Maintain aspect ratio */
+    width: 28px;
+    height: auto;
 }
 
 .tech-header {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 600;
-    margin-top: 3rem;  /* Add space above the header */
-    margin-bottom: 0rem; /* Add space below the header */
+    margin-top: 3.5rem;
+    margin-bottom: 0rem;
     color: #f1f5f9;
     text-align: left;
     letter-spacing: -0.025em;
     font-family: 'Inter', sans-serif;
-    padding-left: 20%; /* Match the padding of other sections */
+    padding-left: 10%;
 }
 
 .tech-stuff-i-work-with {
@@ -462,13 +458,13 @@ h1 {
 }
 
 .language-name {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
 }
 
 .language-description {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     color: #94a3b8;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
@@ -479,8 +475,8 @@ h1 {
 .main-page {
     padding-top: 3vh;
     text-align: left;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     animation: fadeInUp 0.6s ease-out forwards;
     animation-delay: 0.2s;
     will-change: transform, opacity;
@@ -495,20 +491,20 @@ h1 {
 }
 
 .main-page p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #94a3b8; /* Subtle gray color for better contrast */
-    max-width: 650px; /* Limit width for better readability */
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: #94a3b8;
+    max-width: 750px;
     margin-bottom: 0rem;
 }
 
 .tech-description {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.15rem;
+    line-height: 1.7;
     color: #94a3b8;
-    margin-bottom: 2rem;
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-bottom: 2.5rem;
+    padding-left: 10%;
+    padding-right: 10%;
     font-family: 'Inter', sans-serif;
     text-align: left;
     animation: fadeInUp 0.6s ease-out forwards;
@@ -530,38 +526,32 @@ h1 {
 /* Add responsive design rules */
 @media (max-width: 768px) {
     .navbar {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 1rem;
+        padding: 0 5%;
         height: auto;
-        min-height: 10vh;
-        transition: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        min-height: 80px;
     }
 
     .navbar.scrolled {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 1rem;
+        padding: 0 5%;
     }
 
     .logo {
-        margin-left: 0;
+        margin-left: 5%;
         transition: none;
     }
 
     .navbar.scrolled .logo {
-        margin-left: 0;
+        margin-left: 5%;
     }
 
     .contact-button {
-        margin-right: 0;
-        padding: 6px 12px;
+        margin-right: 5%;
+        padding: 8px 16px;
         transition: none;
     }
 
     .navbar.scrolled .contact-button {
-        margin-right: 0;
+        margin-right: 5%;
     }
 
     .nav-buttons {
@@ -580,58 +570,59 @@ h1 {
     }
 
     .main-page {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: 5%;
+        padding-right: 5%;
         padding-top: 2vh;
     }
 
     .tech-header {
-        padding-left: 0.5rem;
+        padding-left: 5%;
         margin-top: 2rem;
     }
 
     .tech-description {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .programming-grid {
         grid-template-columns: repeat(2, 1fr);
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: 5%;
+        padding-right: 5%;
         gap: 0.5rem;
     }
 
     .language-button {
-        min-width: 140px;
-        height: 45px;
-        padding: 0.25rem 0.75rem;
+        min-width: 160px;
+        height: 55px;
+        padding: 0.4rem 1rem;
+        font-size: 1rem;
     }
 
     .language-name {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
     }
 
     .language-description {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .footer-content {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     footer hr {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .main-page p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         max-width: 100%;
     }
 
@@ -655,27 +646,28 @@ h1 {
     }
 
     .nav-button {
-        padding: 8px 12px;
-        font-size: 0.9rem;
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 
     .contact-button {
-        padding: 5px 10px;
-        font-size: 0.9rem;
+        padding: 8px 16px;
+        font-size: 1rem;
     }
 
     .language-button {
-        min-width: 120px;
-        height: 40px;
-        padding: 0.25rem 0.5rem;
+        min-width: 140px;
+        height: 50px;
+        padding: 0.35rem 0.75rem;
+        font-size: 0.95rem;
     }
 
     .language-name {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
 
     .language-description {
-        font-size: 0.5rem;
+        font-size: 0.65rem;
     }
 
     .language-icon {
@@ -723,8 +715,8 @@ h1 {
 .projects-page {
     padding-top: 3vh;
     text-align: left;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     animation: fadeInUp 0.6s ease-out forwards;
     animation-delay: 0.2s;
     will-change: transform, opacity;
@@ -733,11 +725,11 @@ h1 {
 }
 
 .projects-description {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.25rem;
+    line-height: 1.7;
     color: #94a3b8;
-    max-width: 650px;
-    margin-bottom: 2rem;
+    max-width: 750px;
+    margin-bottom: 2.5rem;
     animation: fadeInUp 0.6s ease-out forwards;
     will-change: transform, opacity;
     opacity: 0;
@@ -779,24 +771,24 @@ h1 {
 }
 
 .project-info h3 {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: #ffffff;
 }
 
 .project-info p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #94a3b8;
-    margin-bottom: 1rem;
-    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
 }
 
 .project-meta {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    font-size: 0.8rem;
+    gap: 1.25rem;
+    font-size: 0.9rem;
     color: #64748b;
 }
 
@@ -831,8 +823,8 @@ h1 {
 
 @media (max-width: 768px) {
     .projects-page {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .projects-grid {

@@ -91,7 +91,7 @@ function App() {
   return (
     <div>
       <nav className="navbar" style={{ padding: navbarPadding }}>
-        <img src="assets/topographic-textures.jpg" alt="Logo" className="logo" />
+        <img src="/assets/topographic-textures.jpg" alt="Logo" className="logo" />
         <div className="nav-buttons">
           <button className={`nav-button ${activePage === 'main' ? 'active' : ''}`} onClick={() => togglePage('main')}>
             <FiHome className="nav-icon" />
@@ -144,7 +144,7 @@ function App() {
                 </div>
               </button>
               <button className="language-button cursor-button">
-                <img src="assets/cdnlogo.com_cursor.svg" alt="Cursor" className="language-icon" style={{ width: '24px', height: '24px' }} />
+                <img src="/assets/cdnlogo.com_cursor.svg" alt="Cursor" className="language-icon" />
                 <div className="language-info">
                   <span className="language-name">Cursor</span>
                   <span className="language-description">AI-first IDE</span>
