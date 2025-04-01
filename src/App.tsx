@@ -91,7 +91,10 @@ function App() {
   return (
     <div>
       <nav className="navbar" style={{ padding: navbarPadding }}>
-        <img src="/assets/topographic-textures.jpg" alt="Logo" className="logo" />
+        <button className="logo-button">
+          <img src="/assets/topographic-textures.jpg" alt="Logo" className="logo" />
+          <span className="logo-text">yan5q/{activePage}</span>
+        </button>
         <div className="nav-buttons">
           <button className={`nav-button ${activePage === 'main' ? 'active' : ''}`} onClick={() => togglePage('main')}>
             <FiHome className="nav-icon" />
