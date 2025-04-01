@@ -199,36 +199,8 @@ function App() {
     }
   }, [activePage])
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbar = document.querySelector('.navbar') as HTMLElement
-      const scrollY = window.scrollY
-      const isMobile = window.innerWidth <= 768
 
-      if (!isMobile) {
-        if (scrollY > 50) {
-          setNavbarPadding('0')
-          setBlurValue(15)
-          setUnderlineVisible(true)
-          navbar.classList.add('underline-visible')
-          navbar.classList.add('scrolled')
-        } else {
-          setNavbarPadding('20px')
-          setBlurValue(25)
-          setUnderlineVisible(false)
-          navbar.classList.remove('underline-visible')
-          navbar.classList.remove('scrolled')
-        }
-      }
 
-      navbar.style.backdropFilter = `blur(${blurValue}px)`
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [blurValue])
 
   const getLanguageIcon = (language: string) => {
     const languageMap: { [key: string]: any } = {
