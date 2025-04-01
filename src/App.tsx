@@ -60,9 +60,11 @@ import {
   SiPhpstorm,
   SiJetbrains,
   SiC,
-  SiShell
+  SiShell,
+  SiMatrix
 } from 'react-icons/si'
 import { FiMapPin, FiHome, FiMail, FiGithub } from "react-icons/fi";
+import { MdEmail } from 'react-icons/md'
 
 interface GitHubRepo {
   name: string;
@@ -73,6 +75,15 @@ interface GitHubRepo {
   languages: string[];
   languageBytes: number;
 }
+
+const copyToClipboard = (text: string) => {
+  navigator.clipboard.writeText(text).then(() => {
+    // You can add a toast notification here later
+    console.log('Copied to clipboard:', text);
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+};
 
 function App() {
   const [activePage, setActivePage] = useState('main')
@@ -293,7 +304,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="app">
       <nav className="navbar" style={{ padding: navbarPadding }}>
         <button className="logo-button">
           <img src="/assets/topographic-textures.jpg" alt="Logo" className="logo" />
@@ -313,7 +324,10 @@ function App() {
             <span>projects</span>
           </button>
         </div>
-        <button className="nav-button contact-button">
+        <button 
+          className={`nav-button contact-button ${activePage === 'contact' ? 'active' : ''}`}
+          onClick={() => togglePage('contact')}
+        >
           <FiMail className="nav-icon" />
           <span>contact</span>
         </button>
@@ -443,6 +457,39 @@ function App() {
                 ))}
               </div>
             )}
+          </div>
+        )}
+        {activePage === 'contact' && (
+          <div className="page contact-page">
+            <div className="contact-page">
+              <h1>Contact Me</h1>
+              <p className="contact-description">
+                Feel free to reach out through any of these platforms. Click on an icon to copy the username to your clipboard.
+              </p>
+              <div className="contact-grid">
+                <button 
+                  className="contact-social-button"
+                  onClick={() => copyToClipboard('yan5q@yan5q.org')}
+                  title="Click to copy email"
+                >
+                  <MdEmail className="contact-icon" />
+                </button>
+                <button 
+                  className="contact-social-button"
+                  onClick={() => copyToClipboard('yan5q')}
+                  title="Click to copy Discord username"
+                >
+                  <SiDiscord className="contact-icon" />
+                </button>
+                <button 
+                  className="contact-social-button"
+                  onClick={() => copyToClipboard('@yan5q:matrix.org')}
+                  title="Click to copy Matrix username"
+                >
+                  <SiMatrix className="contact-icon" />
+                </button>
+              </div>
+            </div>
           </div>
         )}
       </div>
