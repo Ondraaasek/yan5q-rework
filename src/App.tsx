@@ -93,7 +93,11 @@ function App() {
       <nav className="navbar" style={{ padding: navbarPadding }}>
         <button className="logo-button">
           <img src="/assets/topographic-textures.jpg" alt="Logo" className="logo" />
-          <span className="logo-text">yan5q/{activePage}</span>
+          <span className="logo-text">
+            <span className="logo-prefix">yan5q</span>
+            <span className="logo-slash">/</span>
+            <span className="logo-suffix">{activePage}</span>
+          </span>
         </button>
         <div className="nav-buttons">
           <button className={`nav-button ${activePage === 'main' ? 'active' : ''}`} onClick={() => togglePage('main')}>
