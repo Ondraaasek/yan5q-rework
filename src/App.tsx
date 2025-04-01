@@ -87,9 +87,8 @@ const copyToClipboard = (text: string) => {
 
 function App() {
   const [activePage, setActivePage] = useState('main')
-  const [navbarPadding, setNavbarPadding] = useState('20px')
-  const [blurValue, setBlurValue] = useState(25)
-  const [underlineVisible, setUnderlineVisible] = useState(false)
+  const [navbarPadding] = useState('20px')
+  const [underlineVisible] = useState(false)
   const [projects, setProjects] = useState<GitHubRepo[]>([])
   const [loading, setLoading] = useState(true)
 
