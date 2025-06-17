@@ -168,30 +168,30 @@ button {
 
 @font-face {
     font-family: 'Iosevka Nerd Font';
-    src: url('./fonts/Iosevka-Regular.ttf') format('truetype'); /* Adjust the path as necessary */
+    src: url('./fonts/Iosevka-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 .underline {
-    position: absolute; /* Position it absolutely within the navbar */
-    bottom: 0; /* Position it at the bottom of the navbar */
-    left: 50%; /* Start from the middle */
-    width: 0; /* Initial width */
-    height: 1px; /* Height of the underline */
-    background-color: rgba(230, 230, 230, 0.5); /* Color of the underline */
-    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for width and position */
-    transform: translateX(-50%); /* Center the underline */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: rgba(230, 230, 230, 0.5);
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
 }
 
 .navbar.underline-visible .underline {
-    width: 100%; /* Full width when visible */
-    left: 50%; /* Align to the middle */
-    transform: translateX(-50%); /* Center the underline */
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navbar.scrolled .nav-buttons {
-    padding: 0 10px; /* Add horizontal padding */
+    padding: 0 10px;
 }
 
 .footer-content {
@@ -217,7 +217,7 @@ h1 {
     font-weight: 600;
 }
 .name {
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3); /* Add glow effect */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3);
 }
 .hey {
     padding-top: 20%;
@@ -226,28 +226,28 @@ h1 {
 }
 
 .scroll-button {
-    background: transparent; /* Transparent background */
-    color: white; /* White text color */
-    border: none; /* No border */
-    font-size: 2rem; /* Increase font size for visibility */
-    cursor: pointer; /* Pointer cursor on hover */
-    margin-top: 20px; /* Space above the button */
-    transition: transform 0.3s; /* Smooth transition for hover effects */
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s;
 }
 
 .scroll-button:hover {
-    transform: translateY(-3px); /* Move up on hover */
+    transform: translateY(-3px);
 }
 
 .additional-content {
     padding: 20px;
-    margin-top: 60px; /* To avoid overlap with navbar */
-    text-align: left; /* Align text to the left */
-    display: none; /* Initially hide the additional content */
+    margin-top: 60px;
+    text-align: left;
+    display: none;
 }
 
 .page.active + .additional-content {
-    display: block; /* Show additional content */
+    display: block;
 }
 
 .programming-grid {
@@ -285,11 +285,11 @@ h1 {
 }
 
 .language-button:hover {
-    transform: translateY(-2.15px); /* Move up on hover */
+    transform: translateY(-2.15px); 
 }
 
 .language-button:active {
-    transform: scale(0.9); /* Scale down on click */
+    transform: scale(0.9); 
 }
 
 .language-logo {
@@ -320,10 +320,10 @@ h1 {
     transform: translateY(20px);
 }
 
-/* Technology-specific button styles */
+
 .react-button {
-  background-color: #2e3641; /* Using the color from button-csharp */
-  color: #ffffff; /* White text */
+  background-color: #2e3641; 
+  color: #ffffff; 
   border-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -333,12 +333,12 @@ h1 {
 }
 
 .react-button .language-icon {
-  color: #61dafb; /* Keep the original React blue for the icon */
+  color: #61dafb; 
 }
 
 .tailwindcss-button {
-  background-color: #2e3c41; /* Using the color from button-css */
-  color: #ffffff; /* White text */
+  background-color: #2e3c41; 
+  color: #ffffff; 
   border-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -348,12 +348,12 @@ h1 {
 }
 
 .tailwindcss-button .language-icon {
-  color: #38bdf8; /* Keep the original Tailwind blue for the icon */
+  color: #38bdf8; 
 }
 
 .typescript-button {
-  background-color: #2e3641; /* Using the color from button-js */
-  color: #ffffff; /* White text */
+  background-color: #2e3641; 
+  color: #ffffff; 
   border-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -363,12 +363,12 @@ h1 {
 }
 
 .typescript-button .language-icon {
-  color: #3178c6; /* Keep the original TypeScript blue for the icon */
+  color: #3178c6; 
 }
 
 .cursor-button {
-  background-color: #373737; /* Using the color from button-swift */
-  color: #ffffff; /* White text */
+  background-color: #373737; 
+  color: #ffffff; 
   border-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -378,7 +378,7 @@ h1 {
 }
 
 .cursor-button .language-icon {
-  color: #41AFFF; /* Keep the original Cursor blue for the icon */
+  color: #41AFFF; 
 }
 
 .cursor-button img.language-icon {
@@ -389,8 +389,8 @@ h1 {
 }
 
 .python-button {
-  background-color: #41402e; /* Using the color from button-python */
-  color: #ffffff; /* White text */
+  background-color: #41402e; 
+  color: #ffffff; 
   border-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -400,12 +400,12 @@ h1 {
 }
 
 .python-button .language-icon {
-  color: #ffde57; /* Keep the original Python yellow for the icon */
+  color: #ffde57; 
 }
 
 .swift-button {
-  background-color: #3d3533; /* Using the color from button-swift */
-  color: #ffffff; /* White text */
+  background-color: #3d3533; 
+  color: #ffffff; 
   border-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -415,12 +415,12 @@ h1 {
 }
 
 .swift-button .language-icon {
-  color: #ff5722; /* Keep the original Swift orange/red for the icon */
+  color: #ff5722; 
 }
 
 .svelte-button {
-  background-color: #41322e; /* Using the color from button-svelte */
-  color: #ffffff; /* White text */
+  background-color: #41322e; 
+  color: #ffffff; 
   border-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -430,12 +430,12 @@ h1 {
 }
 
 .svelte-button .language-icon {
-  color: #ff3e00; /* Keep the original Svelte orange for the icon */
+  color: #ff3e00; 
 }
 
 .css-button {
-  background-color: #2e3c41; /* Using the color from button-css */
-  color: #ffffff; /* White text */
+  background-color: #2e3c41; 
+  color: #ffffff; 
   border-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -446,7 +446,7 @@ h1 {
 }
 
 .css-button .language-icon {
-  color: #2965f1; /* Keep the original CSS blue for the icon */
+  color: #2965f1; 
 }
 
 .language-icon {
@@ -476,7 +476,7 @@ h1 {
     font-family: 'Inter', sans-serif;
 }
 
-/* You can keep any additional styles that are difficult to convert to Tailwind here */
+
 
 .main-page {
     padding-top: 3vh;
@@ -491,9 +491,9 @@ h1 {
 }
 
 .main-heading {
-    margin-top: 0; /* Ensure no top margin */
-    margin-bottom: 1.5rem; /* Add space below the heading */
-    text-align: left; /* Ensure heading is left-aligned */
+    margin-top: 0; 
+    margin-bottom: 1.5rem; 
+    text-align: left; 
 }
 
 .main-page p {
@@ -529,7 +529,7 @@ h1 {
     font-family: 'Inter', sans-serif;
 }
 
-/* Add responsive design rules */
+
 @media (max-width: 768px) {
     .navbar {
         padding: 0 5%;
@@ -819,272 +819,272 @@ h1 {
     color: #666;
 }
 
-/* Language icon colors */
+
 .language-item .language-icon-small {
     color: #666;
 }
 
-/* JavaScript */
+
 .language-item:has(.language-icon-small[data-icon="javascript"]) .language-icon-small {
     color: #F7DF1E;
 }
 
-/* TypeScript */
+
 .language-item:has(.language-icon-small[data-icon="typescript"]) .language-icon-small {
     color: #3178C6;
 }
 
-/* Python */
+
 .language-item:has(.language-icon-small[data-icon="python"]) .language-icon-small {
     color: #3776AB;
 }
 
-/* C++ */
+
 .language-item:has(.language-icon-small[data-icon="cplusplus"]) .language-icon-small {
     color: #00599C;
 }
 
-/* Rust */
+
 .language-item:has(.language-icon-small[data-icon="rust"]) .language-icon-small {
     color: #DEA584;
 }
 
-/* Go */
+
 .language-item:has(.language-icon-small[data-icon="go"]) .language-icon-small {
     color: #00ADD8;
 }
 
-/* Kotlin */
+
 .language-item:has(.language-icon-small[data-icon="kotlin"]) .language-icon-small {
     color: #7F52FF;
 }
 
-/* Ruby */
+
 .language-item:has(.language-icon-small[data-icon="ruby"]) .language-icon-small {
     color: #CC342D;
 }
 
-/* PHP */
+
 .language-item:has(.language-icon-small[data-icon="php"]) .language-icon-small {
     color: #777BB4;
 }
 
-/* HTML */
+
 .language-item:has(.language-icon-small[data-icon="html5"]) .language-icon-small {
     color: #E34F26;
 }
 
-/* CSS */
+
 .language-item:has(.language-icon-small[data-icon="css3"]) .language-icon-small {
     color: #1572B6;
 }
 
-/* React */
+
 .language-item:has(.language-icon-small[data-icon="react"]) .language-icon-small {
     color: #61DAFB;
 }
 
-/* Vue */
+
 .language-item:has(.language-icon-small[data-icon="vue"]) .language-icon-small {
     color: #4FC08D;
 }
 
-/* Angular */
+
 .language-item:has(.language-icon-small[data-icon="angular"]) .language-icon-small {
     color: #DD0031;
 }
 
-/* Next.js */
+
 .language-item:has(.language-icon-small[data-icon="next"]) .language-icon-small {
     color: #000000;
 }
 
-/* Node.js */
+
 .language-item:has(.language-icon-small[data-icon="node"]) .language-icon-small {
     color: #339933;
 }
 
-/* Express */
+
 .language-item:has(.language-icon-small[data-icon="express"]) .language-icon-small {
     color: #000000;
 }
 
-/* Django */
+
 .language-item:has(.language-icon-small[data-icon="django"]) .language-icon-small {
     color: #092E20;
 }
 
-/* Flask */
+
 .language-item:has(.language-icon-small[data-icon="flask"]) .language-icon-small {
     color: #000000;
 }
 
-/* Spring */
+
 .language-item:has(.language-icon-small[data-icon="spring"]) .language-icon-small {
     color: #6DB33F;
 }
 
-/* Laravel */
+
 .language-item:has(.language-icon-small[data-icon="laravel"]) .language-icon-small {
     color: #FF2D20;
 }
 
-/* Rails */
+
 .language-item:has(.language-icon-small[data-icon="rails"]) .language-icon-small {
     color: #CC0000;
 }
 
-/* GraphQL */
+
 .language-item:has(.language-icon-small[data-icon="graphql"]) .language-icon-small {
     color: #E10098;
 }
 
-/* Webpack */
+
 .language-item:has(.language-icon-small[data-icon="webpack"]) .language-icon-small {
     color: #8DD6F9;
 }
 
-/* Babel */
+
 .language-item:has(.language-icon-small[data-icon="babel"]) .language-icon-small {
     color: #F9DC3E;
 }
 
-/* Jest */
+
 .language-item:has(.language-icon-small[data-icon="jest"]) .language-icon-small {
     color: #C21325;
 }
 
-/* Cypress */
+
 .language-item:has(.language-icon-small[data-icon="cypress"]) .language-icon-small {
     color: #17202C;
 }
 
-/* GitLab */
+
 .language-item:has(.language-icon-small[data-icon="gitlab"]) .language-icon-small {
     color: #FC6D26;
 }
 
-/* Bitbucket */
+
 .language-item:has(.language-icon-small[data-icon="bitbucket"]) .language-icon-small {
     color: #0052CC;
 }
 
-/* Jira */
+
 .language-item:has(.language-icon-small[data-icon="jira"]) .language-icon-small {
     color: #0052CC;
 }
 
-/* Confluence */
+
 .language-item:has(.language-icon-small[data-icon="confluence"]) .language-icon-small {
     color: #172B4D;
 }
 
-/* Slack */
+
 .language-item:has(.language-icon-small[data-icon="slack"]) .language-icon-small {
     color: #4A154B;
 }
 
-/* Discord */
+
 .language-item:has(.language-icon-small[data-icon="discord"]) .language-icon-small {
     color: #5865F2;
 }
 
-/* Telegram */
+
 .language-item:has(.language-icon-small[data-icon="telegram"]) .language-icon-small {
     color: #26A5E4;
 }
 
-/* IntelliJ IDEA */
+
 .language-item:has(.language-icon-small[data-icon="intellij"]) .language-icon-small {
     color: #000000;
 }
 
-/* PyCharm */
+
 .language-item:has(.language-icon-small[data-icon="pycharm"]) .language-icon-small {
     color: #000000;
 }
 
-/* WebStorm */
+
 .language-item:has(.language-icon-small[data-icon="webstorm"]) .language-icon-small {
     color: #000000;
 }
 
-/* Android Studio */
+
 .language-item:has(.language-icon-small[data-icon="androidstudio"]) .language-icon-small {
     color: #3DDC84;
 }
 
-/* Xcode */
+
 .language-item:has(.language-icon-small[data-icon="xcode"]) .language-icon-small {
     color: #147EFB;
 }
 
-/* Sublime Text */
+
 .language-item:has(.language-icon-small[data-icon="sublimetext"]) .language-icon-small {
     color: #FF9800;
 }
 
-/* Notepad++ */
+
 .language-item:has(.language-icon-small[data-icon="notepadplusplus"]) .language-icon-small {
     color: #90E59A;
 }
 
-/* Eclipse */
+
 .language-item:has(.language-icon-small[data-icon="eclipse"]) .language-icon-small {
     color: #2C2255;
 }
 
-/* NetBeans */
+
 .language-item:has(.language-icon-small[data-icon="netbeans"]) .language-icon-small {
     color: #1B6AC6;
 }
 
-/* PhpStorm */
+
 .language-item:has(.language-icon-small[data-icon="phpstorm"]) .language-icon-small {
     color: #000000;
 }
 
-/* Rider */
+
 .language-item:has(.language-icon-small[data-icon="rider"]) .language-icon-small {
     color: #000000;
 }
 
-/* MySQL */
+
 .language-item:has(.language-icon-small[data-icon="mysql"]) .language-icon-small {
     color: #4479A1;
 }
 
-/* PostgreSQL */
+
 .language-item:has(.language-icon-small[data-icon="postgresql"]) .language-icon-small {
     color: #4169E1;
 }
 
-/* MongoDB */
+
 .language-item:has(.language-icon-small[data-icon="mongodb"]) .language-icon-small {
     color: #47A248;
 }
 
-/* Redis */
+
 .language-item:has(.language-icon-small[data-icon="redis"]) .language-icon-small {
     color: #DC382D;
 }
 
-/* Docker */
+
 .language-item:has(.language-icon-small[data-icon="docker"]) .language-icon-small {
     color: #2496ED;
 }
 
-/* Kubernetes */
+
 .language-item:has(.language-icon-small[data-icon="kubernetes"]) .language-icon-small {
     color: #326CE5;
 }
 
-/* AWS */
+
 .language-item:has(.language-icon-small[data-icon="amazon"]) .language-icon-small {
     color: #FF9900;
 }
 
-/* Google Cloud */
+
 .language-item:has(.language-icon-small[data-icon="googlecloud"]) .language-icon-small {
     color: #4285F4;
 }
@@ -1249,17 +1249,17 @@ h1 {
     }
 }
 
-/* Svelte */
+
 .language-item:has(.language-icon-small[data-icon="svelte"]) .language-icon-small {
   color: #FF3E00;
 }
 
-/* C */
+
 .language-item:has(.language-icon-small[data-icon="c"]) .language-icon-small {
   color: #A8B9CC;
 }
 
-/* Shell */
+
 .language-item:has(.language-icon-small[data-icon="shell"]) .language-icon-small {
   color: #4EAA25;
 }
@@ -1331,17 +1331,17 @@ h1 {
     transition: color 0.3s ease;
 }
 
-/* Email icon color */
+
 .contact-social-button:hover .contact-icon[data-icon="email"] {
     color: #EA4335;
 }
 
-/* Discord icon color */
+
 .contact-social-button:hover .contact-icon[data-icon="discord"] {
     color: #5865F2;
 }
 
-/* Matrix icon color */
+
 .contact-social-button:hover .contact-icon[data-icon="matrix"] {
     color: #00B4DB;
 }

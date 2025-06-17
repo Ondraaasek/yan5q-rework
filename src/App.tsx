@@ -78,7 +78,7 @@ interface GitHubRepo {
 
 const copyToClipboard = (text: string) => {
   navigator.clipboard.writeText(text).then(() => {
-    // You can add a toast notification here later
+
     console.log('Copied to clipboard:', text);
   }).catch(err => {
     console.error('Failed to copy text: ', err);
@@ -261,7 +261,7 @@ function App() {
     };
 
     const Icon = languageMap[language] || SiGit;
-    // Map language names to their correct data-icon values
+
     const iconMap: { [key: string]: string } = {
       'HTML': 'html5',
       'CSS': 'css3',
