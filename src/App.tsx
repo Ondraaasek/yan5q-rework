@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-// Import Simple Icons
+
 import { 
   SiReact, 
   SiTailwindcss, 
@@ -107,8 +107,7 @@ function App() {
         
         const response = await fetch('https://api.github.com/users/Ondraaasek/repos?sort=updated&per_page=6', {
           headers
-        });
-        
+        }); 
         if (!response.ok) {
           const errorText = await response.text();
           console.error('GitHub API error:', {
